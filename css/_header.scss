@@ -1,0 +1,70 @@
+.header {
+  font-family: $regular-ff;
+  font-weight: 500;
+  color: $Header-background-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+.header__links {
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  margin-right: 43px;
+  font-size: calc($regular-text * 1.25);
+  text-decoration: none;
+  color: $Black-element;
+  transition: color cubic-bezier(0,.4,.03,.87) .4s;
+}
+.header__links :last-child {
+  margin-right: 0px;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 5px;
+  }
+  background-color: transparent;
+  border: 2px solid $Black-element;
+  border-radius: 10px;
+  padding: 9px 26px;
+  transition: background-color, color cubic-bezier(0,.4,.03,.87) .4s;
+}
+.header__button:hover {
+  cursor: pointer;
+  background-color: $Donat-btn-hover-color;
+  color: white;
+  transition: background-color, color cubic-bezier(0,.4,.03,.87) .4s;
+}
+
+
+.header__link {
+  position: relative;
+}
+.header__link:hover,
+.header__link:active,
+.header__link:focus {
+  color: $accent-color;
+  transition: color cubic-bezier(0,.4,.03,.87) .4s;
+}
+.header__link:after {
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  background: $accent-color;
+  bottom: -2px;
+  content: "";
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.header__link:hover:after,
+.header__link:active:after,
+.header__link:focus:after {
+  width: 100%;
+  left: 0;
+}
