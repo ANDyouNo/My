@@ -17,12 +17,31 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
-
+  .header__links{
+    margin-left: 20px;
+  }
 }
 
 /* xs <= Small (sm) */
-@media (max-width : 576px) {
-
+@media (max-width : 425px) {
+  .header {
+    margin-top: 20px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__button {
+    border: none ;
+    img {
+      margin-left: 0px;
+    }
+    p {
+      display: none;
+    }
+  }
 }
 
 

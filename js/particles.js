@@ -69,5 +69,5 @@ function removeParticle (e) {
   e.srcElement.effect.target.remove();
 }
 if (document.body.animate) {
-  document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
+  document.querySelector('.header__button').addEventListener('click', pop);
 }
