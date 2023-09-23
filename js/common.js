@@ -3,10 +3,10 @@ const donatButton = document.querySelector(".header__button");
 donatButton.addEventListener("click", function () {
   const delayInMilliseconds = 1000; //1 second
   donatButton.innerHTML =
-    "<p>Thanks</p>" + '<img src="./images/heart.svg" alt="heart" />';
+    "Thanks" + '<img src="./images/heart.svg" alt="heart" />';
   setTimeout(function () {
     //your code to be executed after 1 second
-    document.location = "https://www.apple.com/";
+    //document.location = "https://www.apple.com/";
   }, delayInMilliseconds);
 });
 
