@@ -225,6 +225,7 @@ particle {
 .header__button {
   display: flex;
   align-items: center;
+  color: black;
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 10px;
@@ -423,15 +424,6 @@ particle {
     display: block;
   }
   .header__links {
-    display: none;
-  }
-  .header__button {
-    border: none;
-  }
-  .header__button img {
-    margin-left: 0px;
-  }
-  .header__button p {
     display: none;
   }
 }
