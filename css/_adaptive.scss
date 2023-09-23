@@ -24,6 +24,9 @@
 
 /* xs <= Small (sm) */
 @media (max-width : 425px) {
+  .menu {
+    display: flex;
+  }
   .header {
     margin-top: 20px;
   }
