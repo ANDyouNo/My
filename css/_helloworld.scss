@@ -64,3 +64,8 @@
   animation-delay:0s;
   -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+
+.fade {
+  opacity:0;
+  transition: .4s all ease-out;
+}

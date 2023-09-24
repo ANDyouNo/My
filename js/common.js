@@ -157,3 +157,15 @@ ScrollSmoother.create({
 	wrapper: '.wrapper',
 	content: '.content'
 })
+
+
+window.addEventListener('load', () => {
+  window.addEventListener('scroll', (function() {
+    let scroll = window.scrollY;
+    if (scroll > 0) {
+      document.querySelector('.arrows').classList.add('fade');
+    } else{
+      document.querySelector('.arrows').classList.remove('fade')
+    }
+  })
+)})

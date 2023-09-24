@@ -509,6 +509,11 @@ particle {
   -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
 
+.fade {
+  opacity: 0;
+  transition: 0.4s all ease-out;
+}
+
 body {
   cursor: url(../images/1c44fc4ca9484f09af54c2d0d3d8920b1qPGJIKr1OhroZCs-2.cur) 30 30, default;
 }
