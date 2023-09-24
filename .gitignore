@@ -4,6 +4,7 @@
 *.fig
 *.psd
 design
+sand
 # Avoid accidental XD upload if you convert the design file
 ###############################################
 *.xd
