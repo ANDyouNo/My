@@ -42,9 +42,9 @@ $accent-color: red;
 @import "particle";
 @import "hamburgers/hamburgers";
 @import "_header";
-@import "_adaptive";
 @import "helloworld";
 
+@import "_adaptive";
 body {
   // cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Bongo_Cat_Cursor.png) , default;
   cursor: url(../images/1c44fc4ca9484f09af54c2d0d3d8920b1qPGJIKr1OhroZCs-2.cur) 30 30 , default;

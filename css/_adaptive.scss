@@ -10,6 +10,15 @@
 
 }
 
+
+@media (max-width : 1024px) {
+  .motion {
+    line,
+    path {
+      stroke-width: 8px;
+    }
+  }
+}
 /* md <= Large (lg) */
 @media (max-width : 992px) {
 
@@ -19,6 +28,13 @@
 @media (max-width : 768px) {
   .header__links{
     margin-left: 20px;
+  }
+  .motion {
+    width: 80vw;
+    line,
+    path {
+      stroke-width: 5px;
+    }
   }
 }
 
@@ -35,6 +51,16 @@
   }
   .header__links {
     display: none;
+  }
+  .motion {
+    width: 84vw;
+    line,
+    path {
+      stroke-width: 4px;
+    }
+  }
+  .hello {
+    height: calc(100vh - 66px);
   }
 }
 

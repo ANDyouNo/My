@@ -402,50 +402,13 @@ particle {
   font-size: 20px;
 }
 
-/* === DESKTOP FIRST === */
-/* xl <= Extra extra large (xxl) */
-/* lg <= Extra large (xl) */
-/* md <= Large (lg) */
-/* sm <= Medium (md) */
-@media (max-width: 768px) {
-  .header__links {
-    margin-left: 20px;
-  }
-}
-/* xs <= Small (sm) */
-@media (max-width: 425px) {
-  .menu {
-    display: flex;
-  }
-  .header {
-    margin-top: 20px;
-  }
-  .hamburger {
-    display: block;
-  }
-  .header__links {
-    display: none;
-  }
-}
-/* === MOBILE FIRST === */
-/* Custom (xs) */
-/* Small (sm) */
-/* Medium (md) */
-/* Large (lg) */
-/* Extra large (xl) */
-@media (min-width: 1200px) {
-  .text {
-    font-size: 18px;
-  }
-}
-/* Extra extra large (xxl) */
-@media (min-width: 1400px) {
-  .text {
-    font-size: 22px;
-  }
+.motion {
+  width: 67vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .motion svg {
-  width: 70vw;
   height: auto;
   overflow: visible;
 }
@@ -514,6 +477,71 @@ particle {
   transition: 0.4s all ease-out;
 }
 
+/* === DESKTOP FIRST === */
+/* xl <= Extra extra large (xxl) */
+/* lg <= Extra large (xl) */
+@media (max-width: 1024px) {
+  .motion line,
+  .motion path {
+    stroke-width: 8px;
+  }
+}
+/* md <= Large (lg) */
+/* sm <= Medium (md) */
+@media (max-width: 768px) {
+  .header__links {
+    margin-left: 20px;
+  }
+  .motion {
+    width: 80vw;
+  }
+  .motion line,
+  .motion path {
+    stroke-width: 5px;
+  }
+}
+/* xs <= Small (sm) */
+@media (max-width: 425px) {
+  .menu {
+    display: flex;
+  }
+  .header {
+    margin-top: 20px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header__links {
+    display: none;
+  }
+  .motion {
+    width: 84vw;
+  }
+  .motion line,
+  .motion path {
+    stroke-width: 4px;
+  }
+  .hello {
+    height: calc(100vh - 66px);
+  }
+}
+/* === MOBILE FIRST === */
+/* Custom (xs) */
+/* Small (sm) */
+/* Medium (md) */
+/* Large (lg) */
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .text {
+    font-size: 18px;
+  }
+}
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+  .text {
+    font-size: 22px;
+  }
+}
 body {
   cursor: url(../images/1c44fc4ca9484f09af54c2d0d3d8920b1qPGJIKr1OhroZCs-2.cur) 30 30, default;
 }
