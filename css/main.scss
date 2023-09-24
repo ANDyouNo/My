@@ -43,6 +43,7 @@ $accent-color: red;
 @import "hamburgers/hamburgers";
 @import "_header";
 @import "_adaptive";
+@import "helloworld";
 
 body {
   // cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Bongo_Cat_Cursor.png) , default;
@@ -54,3 +55,4 @@ a {
 button {
   cursor: url(../images/vertopal.com_9c0ac8d0e85a4d91dc54d878e28f3d0ebveoNeW79zdAfQ65-2.cur) 30 30 , default;
 }
+
