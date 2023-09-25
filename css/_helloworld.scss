@@ -1,20 +1,27 @@
 .motion {
-  width: 67vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  height: 30vh;
   svg {
     height: auto;
     overflow: visible;
+    max-width: 1000px;
+    width: 100%;
   }
   line,
   path {
-    stroke-width: 10px;
+    stroke-width: 12px;
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
   }
 }
+
+.hello-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
 .hello {
   height: calc(100vh - 120px);
   display: flex;
@@ -30,7 +37,7 @@
 }
 
 .arrows path {
-  stroke: black;
+  stroke: $Header-color;
   fill: transparent;
   stroke-width: 1px;
   animation: arrow 2s infinite;

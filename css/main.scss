@@ -15,7 +15,18 @@ $index: calc(1vh + 1vw);
 $regular-ff: Raleway;
 $regular-text: 16px;
 
-//Header
+//Colors
+$General-background: #E2F0F1;
+$Soft-accent: #A8CED7;
+$Medium-accent: #446F99;
+$Strong-accent: #343E59;
+$Interactive-accent: #DE4C4D;
+
+$Header-color: $Strong-accent;
+$Font-color: $Medium-accent;
+$Hover-text-light: white;
+
+
 $Header-background-color: #FFF;
 $Black-element: #000;
 $Donat-btn-hover-color: #FF7694;
@@ -46,6 +57,7 @@ $accent-color: red;
 
 @import "_adaptive";
 body {
+  background-color: $General-background;
   // cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Bongo_Cat_Cursor.png) , default;
   cursor: url(../images/1c44fc4ca9484f09af54c2d0d3d8920b1qPGJIKr1OhroZCs-2.cur) 30 30 , default;
 }

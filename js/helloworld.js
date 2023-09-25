@@ -6,7 +6,7 @@ const tl = gsap.timeline({
   // repeatDelay: 1.5
 });
 
-const colors = ['#5F5F5F', '#FF0000', '#000000'];
+const colors = ['#A8CED7', '#446F99', '#DE4C4D', '#343E59'];
 
 function tween (node) {
   let path = node;

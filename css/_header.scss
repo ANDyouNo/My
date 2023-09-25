@@ -2,7 +2,7 @@
   margin-top: 60px;
   font-family: $regular-ff;
   font-weight: 500;
-  color: $Header-background-color;
+  color: $General-background;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,16 +14,16 @@
   img {
     margin-left: 5px;
   }
-  color: black;
+  color: $Header-color;
   background-color: transparent;
-  border: 2px solid $Black-element;
+  border: 2px solid $Header-color;
   border-radius: 10px;
   padding: 9px 26px;
   transition: background-color, color cubic-bezier(0, 0.4, 0.03, 0.87) 0.4s;
 }
 .header__button:hover {
-  background-color: $Donat-btn-hover-color;
-  color: white;
+  background-color: $Interactive-accent;
+  color: $Hover-text-light;
   transition: background-color, color cubic-bezier(0, 0.4, 0.03, 0.87) 0.4s;
 }
 
@@ -37,12 +37,12 @@
   margin-right: 43px;
   font-size: calc($regular-text * 1.25);
   text-decoration: none;
-  color: $Black-element;
+  color: $Header-color;
   transition: color cubic-bezier(0, 0.4, 0.03, 0.87) 0.4s;
 }
 
 .hover {
-  color: $accent-color;
+  color: $Interactive-accent;
 }
 
 .link-container {
@@ -62,17 +62,17 @@
   // margin-right: 350px; //del if more one
 }
 .submenu-item {
-  color: black;
+  color: $Header-color;
   text-decoration: none;
 }
 
 .submenu-item:hover {
-  color: $accent-color;
+  color: $Interactive-accent;
   transition: color cubic-bezier(0, 0.4, 0.03, 0.87) 0.4s;
 }
 
 .submenu-header {
-  color: black;
+  color: $Header-color;
   margin-bottom: 5px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .podlojka {
-  background-color: white;
+  background-color: $General-background;
   position: absolute;
   width: 100%;
   left: 0;
@@ -146,9 +146,9 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: $General-background;
   flex-direction: column;
-  color: black;
+  color: $Header-color;
   padding-bottom: 30px;
   transition: .5s;
 }
@@ -167,7 +167,7 @@
 }
 
 .menu__link {
-  color: black;
+  color: $Header-color;
   text-decoration: none;
   font-weight: 600;
   font-size: 32px;
@@ -180,7 +180,7 @@
   font-size: 26px;
 }
 .menu__category-link {
-  color: black;
+  color: $Header-color;
   text-decoration: none;
   font-weight: normal;
   font-size: 20px;
