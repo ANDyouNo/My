@@ -26,6 +26,12 @@
   width: calc(calc(1vw + 1vh) * 7);
 }
 .Limg {
+  background: url(../images/Component\ 4.svg) no-repeat center center;
+  background-size: contain;
+  height: calc(calc(1vw + 1vh) * 14);
+  width: calc(calc(1vw + 1vh) * 14);
+  position: absolute;
+  left: -30px;
 }
 .start-container {
   margin-top: 100px;
@@ -54,4 +60,5 @@
   position: inherit;
   left: 0;
   font-size: 36px;
+  text-align: center;
 }
