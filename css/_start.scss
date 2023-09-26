@@ -1,0 +1,57 @@
+.start {
+}
+.background-string {
+  font-family: hack;
+  font-size: 96px;
+  font-weight: normal;
+  color: $Soft-accent;
+  position: relative;
+  left: 60vw;
+}
+.meet-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.global-text {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: medium;
+  margin-top: 100px;
+}
+.emoji-img {
+  background: url(../images/Component\ 9.svg) no-repeat center center;
+  background-size: contain;
+  height: calc(calc(1vw + 1vh) * 7);
+  width: calc(calc(1vw + 1vh) * 7);
+}
+.Limg {
+}
+.start-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.start-button {
+
+  background: no-repeat center/contain url(../images/no-active.svg);
+  //background: url(../images/no-active.svg) no-repeat center center;
+  //background-size: contain;
+  height: calc(calc(1vw + 1vh) * 12);
+  width: calc(calc(1vw + 1vh) * 12);
+}
+.right {
+  text-align: right;
+}
+
+.tooltip {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.center {
+  position: inherit;
+  left: 0;
+  font-size: 36px;
+}

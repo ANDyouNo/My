@@ -82,6 +82,12 @@ select {
   }
 }
 /* FONTS LOAD SECTION */
+@font-face {
+  font-family: "hack";
+  src: url("../fonts/hack-regular-webfont.woff2") format("woff2"), url("../fonts/hack-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* USER VARIABLES SECTION */
 /* USER STYLES */
 ::-webkit-scrollbar {
@@ -480,6 +486,63 @@ particle {
 .fade {
   opacity: 0;
   transition: 0.4s all ease-out;
+}
+
+.background-string {
+  font-family: hack;
+  font-size: 96px;
+  font-weight: normal;
+  color: #A8CED7;
+  position: relative;
+  left: 60vw;
+}
+
+.meet-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.global-text {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: medium;
+  margin-top: 100px;
+}
+
+.emoji-img {
+  background: url(../images/Component\ 9.svg) no-repeat center center;
+  background-size: contain;
+  height: calc((1vw + 1vh) * 7);
+  width: calc((1vw + 1vh) * 7);
+}
+
+.start-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.start-button {
+  background: no-repeat center/contain url(../images/no-active.svg);
+  height: calc((1vw + 1vh) * 12);
+  width: calc((1vw + 1vh) * 12);
+}
+
+.right {
+  text-align: right;
+}
+
+.tooltip {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.center {
+  position: inherit;
+  left: 0;
+  font-size: 36px;
 }
 
 /* === DESKTOP FIRST === */
