@@ -63,7 +63,7 @@ $accent-color: red;
 @import "start";
 @import "ending";
 
-@import "_adaptive";
+@import "adaptive";
 body {
   background-color: $General-background;
   // cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Bongo_Cat_Cursor.png) , default;

@@ -15,11 +15,9 @@
   align-items: center;
 }
 .text-container {
-  
 }
 
 .content-cont {
-
 }
 .ending-text {
   font-family: Raleway;
@@ -33,14 +31,15 @@
   height: calc(calc(1vw + 1vh) * 16);
   background-color: black;
 }
-.Rimg {
-  background: url(../images/Rectangle\ 91.svg) no-repeat center center;
-  background-size: contain;
-  height: calc(calc(1vw + 1vh) * 25);
-  width: calc(calc(1vw + 1vh) * 25);
-  position: absolute;
-  right: -300px;
-}
+// .Rimg {
+//   background: url(../images/Intersect.svg) no-repeat center center;
+//   background-size: contain;
+//   height: calc(calc(1vw + 1vh) * 15);
+//   width: calc(calc(1vw + 1vh) * 12);
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+// }
 .global-text {
 }
 // .Rimg-snake {

@@ -584,15 +584,6 @@ particle {
   background-color: black;
 }
 
-.Rimg {
-  background: url(../images/Rectangle\ 91.svg) no-repeat center center;
-  background-size: contain;
-  height: calc((1vw + 1vh) * 25);
-  width: calc((1vw + 1vh) * 25);
-  position: absolute;
-  right: -300px;
-}
-
 .background-link {
   font-family: hack;
   font-size: 36px;
@@ -618,11 +609,19 @@ particle {
 
 /* === DESKTOP FIRST === */
 /* xl <= Extra extra large (xxl) */
+@media (max-width: 1440px) {
+  .Limg {
+    left: -90px;
+  }
+}
 /* lg <= Extra large (xl) */
 @media (max-width: 1024px) {
   .motion line,
   .motion path {
     stroke-width: 8px;
+  }
+  .ending-text {
+    width: 40vw;
   }
 }
 /* md <= Large (lg) */
@@ -638,6 +637,15 @@ particle {
   .motion line,
   .motion path {
     stroke-width: 10px;
+  }
+  .Limg {
+    left: -300px;
+  }
+  .ending-text {
+    width: 30vw;
+  }
+  .m-top {
+    margin-bottom: 50px;
   }
 }
 /* xs <= Small (sm) */
@@ -664,6 +672,53 @@ particle {
   }
   .hello {
     height: calc(100vh - 66px);
+  }
+  .global-text {
+    width: 37vw;
+  }
+  .emoji-img {
+    height: calc((1vw + 1vh) * 10);
+    width: calc((1vw + 1vh) * 12);
+  }
+  .start-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .global-text.right {
+    width: 90vw;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  .start-button {
+    height: calc((1vw + 1vh) * 20);
+    width: calc((1vw + 1vh) * 20);
+  }
+  .general-header {
+    font-size: 48px;
+  }
+  .section-container {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .ending-text {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .global-text.center.m-top {
+    width: auto;
+  }
+  .background-link {
+    font-size: 24px;
+  }
+  .th3d-model {
+    max-width: 375px;
+    width: 100%;
+    height: calc((1vw + 1vh) * 22);
+    background-color: black;
   }
 }
 /* === MOBILE FIRST === */
