@@ -46,6 +46,10 @@
   height: calc(calc(1vw + 1vh) * 12);
   width: calc(calc(1vw + 1vh) * 12);
 }
+
+.start-button:active {
+  background: no-repeat center/contain url(../images/active.svg);
+}
 .right {
   text-align: right;
 }

@@ -183,13 +183,8 @@ const startButton = document.querySelector('.start-button')
 
 let buttonTapsCount = 0
 
-startButton.addEventListener('mousedown', () => {
-  startButton.style = 'background: no-repeat center/contain url(../images/active.svg);'
-})
-startButton.addEventListener('mouseup', () => {
-  startButton.style = 'background: no-repeat center/contain url(../images/no-active.svg);'
+startButton.addEventListener('click', () => {
   buttonTapsCount += 1
-
   // Событие на 10 нажатий
   if (buttonTapsCount >= 10) {
     alert('Харош уже')
