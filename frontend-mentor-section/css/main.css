@@ -79,6 +79,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .gallary {
   margin: auto;
   max-width: 1400px;
