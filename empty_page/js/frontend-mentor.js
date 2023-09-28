@@ -50,8 +50,8 @@ const redButton = document.querySelector(".amogus");
 
 // Обработчик кнопки
 redButton.addEventListener("click", () => {
-      // const audio = defaultSound.cloneNode();
-      audio.play(defaultSound);
+      const audio = defaultSound.cloneNode();
+      audio.play();
 });
 
 
