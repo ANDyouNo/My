@@ -186,6 +186,9 @@ let buttonTapsCount = 0
 startButton.addEventListener('click', () => {
   buttonTapsCount += 1
   // Событие на 10 нажатий
+
+  //// Сделать дальше Red button
+
   if (buttonTapsCount >= 10) {
     alert('Харош уже')
   }
