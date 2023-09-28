@@ -42,9 +42,12 @@ elem.addEventListener('mousemove', function (event) {
 });
 
 
+window.addEventListener("load", () => {
+  localStorage.setItem("sound", "../2.mp3");
+});
 
 // Элементы
-const defaultSound = new Audio("../guy-yelling-among-us-sound-effect.mp3");
+const defaultSound = new Audio(localStorage.getItem("sound"));
 // Кнопки
 const redButton = document.querySelector(".amogus");
 
@@ -53,5 +56,4 @@ redButton.addEventListener("click", () => {
       const audio = defaultSound.cloneNode();
       audio.play();
 });
-
 
