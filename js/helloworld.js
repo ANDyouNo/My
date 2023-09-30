@@ -57,7 +57,7 @@ function tween (node) {
 
 // Query all paths and create a tween for each
 window.addEventListener('load', () => {
-  document.querySelectorAll('svg path').forEach(p => tween(p));
+  document.querySelectorAll('.motion path').forEach(p => tween(p));
 })
 
 // Init GSAP devtools

@@ -38,6 +38,8 @@ $Black-element: #000;
 $Donat-btn-hover-color: #FF7694;
 $accent-color: red;
 
+
+
 /* USER STYLES */
 
 ::-webkit-scrollbar {
@@ -62,6 +64,7 @@ $accent-color: red;
 @import "helloworld";
 @import "start";
 @import "ending";
+@import "social";
 
 @import "adaptive";
 body {

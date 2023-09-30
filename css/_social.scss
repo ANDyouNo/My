@@ -1,0 +1,122 @@
+$instagram: #d12c7a;
+$dribbble: #e6447d;
+$discord: #5865f2;
+$behance: #053eff;
+$telegram: #2AABEE;
+$upwork: #6fda44;
+$youtube: red;
+
+.contact {
+
+  nav {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    transition: 0.3s all ease-in-out;
+    z-index: 1;
+  }
+  
+  a:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  a.instagram:hover::before {
+    background-color: $instagram;
+  }
+
+  a.behance:hover::before {
+    background-color: $behance;
+  }
+
+  a.dribbble:hover::before {
+    background-color: $dribbble;
+  }
+
+  a.telegram:hover::before {
+    background-color: $telegram;
+  }
+
+  a.discord:hover::before {
+    background-color: $discord;
+  }
+
+  a.youtube:hover::before {
+    background-color: $youtube;
+  }
+
+  a.upwork:hover::before {
+    background-color: $upwork
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: #000 solid 3px;
+  }
+  
+  a:hover::after {
+    width: 120%;
+    height: 120%;
+  }
+
+  a svg {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  a svg path,
+  a svg circle {
+    transition: 0.3s all ease-in-out;
+  }
+  
+  a:hover svg path,
+  a:hover svg circle {
+    fill: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
