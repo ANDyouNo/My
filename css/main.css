@@ -586,6 +586,7 @@ particle {
   width: calc((1vw + 1vh) * 22);
   height: calc((1vw + 1vh) * 16);
   background-color: black;
+  border-radius: 40px;
 }
 
 .background-link {

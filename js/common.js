@@ -194,4 +194,74 @@ startButton.addEventListener('click', () => {
   }
 })
 
+let width = window.getComputedStyle(document.querySelector('.th3d-model')).width
+width = width.replace(/[a-z]/gi, '')
+width = parseInt(width)
 
+let height = window.getComputedStyle(document.querySelector('.th3d-model')).height
+height = height.replace(/[a-z]/gi, '')
+height = parseInt(height)
+
+
+// Сцена
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog( 0x010C36 , 1.2 , 4 );
+const canvas = document.querySelector('canvas');
+
+//Sizes
+const sizes = {
+  x: width,
+  y: height,
+}
+
+// Камера
+const camera = new THREE.PerspectiveCamera( 70, (sizes.x * 2) / (sizes.y * 2));
+camera.position.z = 3;
+
+scene.add(camera);
+
+// Объект
+const geometry = new THREE.TorusKnotGeometry(1, 0.25, 600, 100, 2, 5);
+const material = new THREE.MeshBasicMaterial({
+    color: '0xffffff',
+    fog: true,
+});
+
+const mesh = new THREE.Mesh(geometry, material);
+
+scene.add(mesh);
+
+const renderer = new THREE.WebGLRenderer({ canvas });
+renderer.setPixelRatio(4)
+
+const tick = ( time ) => {
+
+  renderer.render(scene, camera)
+  mesh.rotation.z = time / 3000;
+  
+  window.requestAnimationFrame(tick)
+
+}
+
+tick()
+
+window.addEventListener('resize', () => {
+  sizes.x = width
+  sizes.y = height
+  camera.aspect = width / height
+  camera.updateProjectionMatrix()
+
+  renderer.setSize(width, height)
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 4))
+  renderer.render(scene, camera)
+})
+
+window.addEventListener('dblclick', () => {
+  if (document.fullscreenElement) {
+    //Close
+    document.exitFullscreen()
+  } else {
+    //Open
+    canvas.requestFullscreen()
+  }
+})
