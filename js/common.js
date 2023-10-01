@@ -185,26 +185,26 @@ let buttonTapsCount = 0
 
 startButton.addEventListener('click', () => {
   buttonTapsCount += 1
-  
-  if (buttonTapsCount = 10) {
+  console.log(buttonTapsCount)
+  if (buttonTapsCount === 10) {
     alert('Харош уже')
   }
-  if (buttonTapsCount = 12) {
+  if (buttonTapsCount === 12) {
     alert('А ты бунтарь')
   }
-  if (buttonTapsCount = 20) {
+  if (buttonTapsCount === 20) {
     alert('Думал все?')
   }
-  if (buttonTapsCount = 25) {
+  if (buttonTapsCount === 25) {
     alert('Давай кто больше?')
   }
-  if (buttonTapsCount = 50) {
+  if (buttonTapsCount === 50) {
     alert('Тебе совсем делать нечего?')
   }
-  if (buttonTapsCount = 100) {
+  if (buttonTapsCount === 100) {
     alert('Ок, ладно, ты победил!')
   }
-  if (buttonTapsCount = 200) {
+  if (buttonTapsCount === 200) {
     alert('1000-7')
   }
 })
