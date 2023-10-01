@@ -185,12 +185,27 @@ let buttonTapsCount = 0
 
 startButton.addEventListener('click', () => {
   buttonTapsCount += 1
-  // Событие на 10 нажатий
-
-  //// Сделать дальше Red button
-
-  if (buttonTapsCount >= 10) {
+  
+  if (buttonTapsCount = 10) {
     alert('Харош уже')
+  }
+  if (buttonTapsCount = 12) {
+    alert('А ты бунтарь')
+  }
+  if (buttonTapsCount = 20) {
+    alert('Думал все?')
+  }
+  if (buttonTapsCount = 25) {
+    alert('Давай кто больше?')
+  }
+  if (buttonTapsCount = 50) {
+    alert('Тебе совсем делать нечего?')
+  }
+  if (buttonTapsCount = 100) {
+    alert('Ок, ладно, ты победил!')
+  }
+  if (buttonTapsCount = 200) {
+    alert('1000-7')
   }
 })
 
@@ -256,7 +271,7 @@ window.addEventListener('resize', () => {
   renderer.render(scene, camera)
 })
 
-window.addEventListener('dblclick', () => {
+document.querySelector('canvas').addEventListener('dblclick', () => {
   if (document.fullscreenElement) {
     //Close
     document.exitFullscreen()

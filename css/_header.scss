@@ -8,6 +8,21 @@
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  width: 60px;
+  height: 60px;
+}
+
+.logo_text {
+  font-size: calc($regular-text * 1.25);
+  color: $Header-color;
+}
+
 .header__button {
   display: flex;
   align-items: center;

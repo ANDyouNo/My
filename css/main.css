@@ -228,6 +228,21 @@ particle {
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  width: 60px;
+  height: 60px;
+}
+
+.logo_text {
+  font-size: 20px;
+  color: #343E59;
+}
+
 .header__button {
   display: flex;
   align-items: center;
@@ -560,6 +575,7 @@ particle {
 }
 
 .general-header {
+  color: #343E59;
   font-family: Raleway;
   font-size: 64px;
   font-weight: medium;
@@ -589,6 +605,10 @@ particle {
   border-radius: 40px;
 }
 
+.global-text {
+  color: #343E59;
+}
+
 .background-link {
   font-family: hack;
   font-size: 36px;
@@ -610,6 +630,10 @@ particle {
 
 .m-top {
   margin-bottom: 150px;
+}
+
+.ending-text {
+  color: #343E59;
 }
 
 .contact nav {
