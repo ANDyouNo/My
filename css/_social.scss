@@ -83,7 +83,7 @@ $youtube: red;
     height: 0;
     z-index: -1;
     transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: #000 solid 3px;
+    border: #343E59 solid 3px;
   }
   
   a:hover::after {
@@ -103,6 +103,11 @@ $youtube: red;
     transition: 0.3s all ease-in-out;
   }
   
+  a svg path,
+  a svg circle {
+    fill: #343E59;
+  }
+
   a:hover svg path,
   a:hover svg circle {
     fill: #fff;

@@ -178,6 +178,12 @@ window.addEventListener('load', () => {
 
 //---------------------------------------------------
 
+const boom = new Audio('./sound/boom.mp3')
+const emotional = new Audio('./sound/emotional-damage-meme.mp3')
+const fart = new Audio('./sound/fart-with-extra-reverb.mp3')
+const heheheha = new Audio('./sound/he-he-he-ha-clash-royale-deep-fried.mp3')
+const kudasai = new Audio('./sound/iamete-kudasai_vDfhVBw.mp3')
+
 
 const startButton = document.querySelector('.start-button')
 
@@ -198,16 +204,64 @@ startButton.addEventListener('click', () => {
   if (buttonTapsCount === 25) {
     alert('Давай кто больше?')
   }
-  if (buttonTapsCount === 50) {
-    alert('Тебе совсем делать нечего?')
-  }
   if (buttonTapsCount === 100) {
-    alert('Ок, ладно, ты победил!')
+    const audioPlay = heheheha.cloneNode();
+    audioPlay.play();
   }
   if (buttonTapsCount === 200) {
+    alert('Тебе совсем делать нечего?')
+  }
+  if (buttonTapsCount === 400) {
+    const audioPlay = emotional.cloneNode();
+    audioPlay.play();
+  }
+  if (buttonTapsCount === 500) {
+    alert('Ок, ладно, ты победил!')
+  }
+  if (buttonTapsCount === 501) {
+    const audioPlay = fart.cloneNode();
+    audioPlay.play();
+  }
+  if (buttonTapsCount === 1000) {
     alert('1000-7')
   }
+  if (buttonTapsCount > 1000) {
+    const audioPlay = kudasai.cloneNode();
+    audioPlay.play();
+  }
+
+
+  if (buttonTapsCount === 1) {
+    const audioPlay = boom.cloneNode();
+    audioPlay.play();
+  }
+  if (buttonTapsCount === 2) {
+    const audioPlay = fart.cloneNode();
+    audioPlay.play();
+  }
+  if (buttonTapsCount === 3) {
+    const audioPlay = kudasai.cloneNode();
+    audioPlay.play();
+  }
+  if (buttonTapsCount === 4) {
+    const audioPlay = emotional.cloneNode();
+    audioPlay.play();
+  }
+  if (buttonTapsCount === 5) {
+    const audioPlay = heheheha.cloneNode();
+    audioPlay.play();
+  }
+  
 })
+
+
+
+
+
+
+
+
+
 
 let width = window.getComputedStyle(document.querySelector('.th3d-model')).width
 width = width.replace(/[a-z]/gi, '')

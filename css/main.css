@@ -699,7 +699,7 @@ particle {
   height: 0;
   z-index: -1;
   transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: #000 solid 3px;
+  border: #343E59 solid 3px;
 }
 .contact a:hover::after {
   width: 120%;
@@ -714,6 +714,10 @@ particle {
 .contact a svg path,
 .contact a svg circle {
   transition: 0.3s all ease-in-out;
+}
+.contact a svg path,
+.contact a svg circle {
+  fill: #343E59;
 }
 .contact a:hover svg path,
 .contact a:hover svg circle {
