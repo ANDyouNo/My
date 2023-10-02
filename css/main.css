@@ -671,7 +671,7 @@ particle {
   height: 100%;
 }
 .contact a.instagram:hover::before {
-  background-color: #d12c7a;
+  background-color: #ccc;
 }
 .contact a.behance:hover::before {
   background-color: #053eff;
@@ -686,10 +686,10 @@ particle {
   background-color: #5865f2;
 }
 .contact a.youtube:hover::before {
-  background-color: red;
+  background-color: #ccc;
 }
 .contact a.upwork:hover::before {
-  background-color: #6fda44;
+  background-color: #ccc;
 }
 .contact a::after {
   content: "";
