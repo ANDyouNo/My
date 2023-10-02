@@ -222,36 +222,13 @@ startButton.addEventListener('click', () => {
     const audioPlay = fart.cloneNode();
     audioPlay.play();
   }
-  if (buttonTapsCount === 1000) {
+  if (buttonTapsCount === 2000) {
     alert('1000-7')
   }
-  if (buttonTapsCount > 1000) {
+  if (buttonTapsCount > 2000) {
     const audioPlay = kudasai.cloneNode();
     audioPlay.play();
   }
-
-
-  if (buttonTapsCount === 1) {
-    const audioPlay = boom.cloneNode();
-    audioPlay.play();
-  }
-  if (buttonTapsCount === 2) {
-    const audioPlay = fart.cloneNode();
-    audioPlay.play();
-  }
-  if (buttonTapsCount === 3) {
-    const audioPlay = kudasai.cloneNode();
-    audioPlay.play();
-  }
-  if (buttonTapsCount === 4) {
-    const audioPlay = emotional.cloneNode();
-    audioPlay.play();
-  }
-  if (buttonTapsCount === 5) {
-    const audioPlay = heheheha.cloneNode();
-    audioPlay.play();
-  }
-  
 })
 
 
