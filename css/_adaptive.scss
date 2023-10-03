@@ -54,6 +54,7 @@
 @media (max-width: 425px) {
   .menu {
     display: flex;
+    position: fixed;
   }
   .header {
     margin-top: 20px;

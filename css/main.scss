@@ -72,6 +72,13 @@ body {
   // cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Bongo_Cat_Cursor.png) , default;
   cursor: url(../images/1c44fc4ca9484f09af54c2d0d3d8920b1qPGJIKr1OhroZCs-2.cur) 30 30 , default;
 }
+
+.menu-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 a {
   cursor: url(../images/vertopal.com_9c0ac8d0e85a4d91dc54d878e28f3d0ebveoNeW79zdAfQ65-2.cur) 30 30 , default;
 }

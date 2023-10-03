@@ -195,3 +195,17 @@
   font-weight: normal;
   font-size: 20px;
 }
+.link-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.link-container-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.contacts {
+  width: 70vw;
+}

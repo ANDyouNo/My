@@ -228,11 +228,6 @@ particle {
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo_img {
   width: 60px;
   height: 60px;
@@ -421,6 +416,21 @@ particle {
   text-decoration: none;
   font-weight: normal;
   font-size: 20px;
+}
+
+.link-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.link-container-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.contacts {
+  width: 70vw;
 }
 
 .motion {
@@ -769,6 +779,7 @@ particle {
 @media (max-width: 425px) {
   .menu {
     display: flex;
+    position: fixed;
   }
   .header {
     margin-top: 20px;
@@ -858,6 +869,12 @@ particle {
 body {
   background-color: #E2F0F1;
   cursor: url(../images/1c44fc4ca9484f09af54c2d0d3d8920b1qPGJIKr1OhroZCs-2.cur) 30 30, default;
+}
+
+.menu-open {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 a {
